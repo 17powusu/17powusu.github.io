@@ -1,0 +1,296 @@
+/* type selectors */
+html {
+	background-image: url("../images/Checker_Background.jpg");
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+	width: 100%;            /* changed from 960px */
+	max-width: 960px;
+	background-color: whitesmoke;
+	margin: 1em auto;
+	padding: 0;
+	border: 1px solid black;
+}
+section, aside, h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align:center;
+}
+h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 400px;
+}
+section {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	margin-right: 6%;
+	margin-left:6%;
+}
+
+a { font-weight: bold; }
+a:link { color: #800000; }
+a:visited { color: navy; }
+a:hover, a:focus { color: blue; }
+
+p { padding-bottom: 0.5em; }
+	
+em { font-weight: bold; }
+
+/* the styles for the header */
+header {
+	background: #f0b7a1; /* Old browsers */
+	background: -moz-linear-gradient(top, #f0b7a1 0%, #752201 0%, #8c3310 50%, #bf6e4e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+	padding-bottom: 1em;
+}
+@font-face {
+    /*font-family: Italy;*/
+    /*src: url("FRSCRIPT.TTF");*/
+}
+header h2 {
+	font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+	font-size: 350%;
+	font-weight: bold;
+	text-align: center;
+    color: white;
+    text-shadow: 2px 3px 0 black;
+    padding-top: .25em;
+    margin-left: 2.60416%;        /* 25 / 960 x 100 */
+}
+header h3 {
+	font-family: Times, Times New Roman, serif;
+	font-size: 150%;
+	margin-left: 13.02083%;       /* 125 / 960 x 100 */
+}
+	
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style: none;
+	position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+	float: none;           /* Display the submenus vertically */
+}
+#nav_menu ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* The styles for the formatting of the 2-tier navigation menu */
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 217px;
+	padding: 1em;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right:auto;
+}
+#nav_menu ul li.lastitem a {
+	width: 193.5px;               /* So the menu fills the 706px width of the page */
+}
+#nav_menu ul li a.current {
+	background-color: teal;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+/* the styles for the section */
+section {
+	width: 67.1875%;             /* 645 / 960 x 100 */
+	padding-left: 12.08333%;      /* 20 / 960 x 100 */
+	padding-right: 20.08333%;     /* 20 / 960 x 100 */
+	float:left;
+}
+section h1 {
+	font-size: 200%;
+	margin-bottom: 0.5em; 
+	color: #800000;
+}
+article {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+article p {
+	margin-bottom: .75em;
+}
+figure {
+    margin-right: 2.32558%;    /* 20 / 645 x 100 */
+    margin-left: 0; 
+    margin-top: 0;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    padding-top: .25em;
+    margin-bottom: .6em;
+    border-bottom: 1px solid black;
+}
+figure img {
+	width: 100%;
+	max-width: 300px;
+}
+
+/* the styles for the sidebar */
+aside {
+	width: 26.04166%;          /* 250 / 960 x 100 */
+	float: right;
+	padding-right: 2.60416%;    /* 25 / 960 x 100 */
+}
+aside h2 {
+	font-size: 125%;
+	color: #696969;
+	margin-top: 1.7em;
+	padding-bottom: .5em;
+}
+aside ul {
+	list-style: none;
+}
+aside li {
+	margin-bottom: .5em;
+}
+
+aside img {
+	border: 1px solid #696969;
+}
+aside .site {
+	margin-right: 4%;           /* 10 / 250 x 100 */
+}
+
+/* the styles for the footer */
+footer {
+	clear: both;
+	padding-top: 1em;
+	background: #f0b7a1; /* Old browsers */
+	background: -moz-linear-gradient(top, #f0b7a1 0%, #752201 0%, #8c3310 50%, #bf6e4e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+}
+footer p {
+	font-size: 80%;
+	color: white;
+	margin-left: 2.60416%;      /* 25 / 960 x 100 */          
+	padding-bottom: 1em;
+	text-align:center;
+}
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 959px) {
+	#nav_menu ul li {
+		width: 19.73368%;            /* adjustment for right borders */
+	}
+	section h1 {
+		font-size: 175%;
+	}
+	figcaption {
+		font-size: 80%;
+	}
+	aside h2 {
+		font-size: 110%;
+	}
+	aside ul li {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: black !important;
+	}
+	.slicknav_btn {
+		background-color: #696969 !important;
+	}
+	header h2 {
+		font-size: 300%;
+		margin-bottom: .25em;
+	}
+	header h3 {
+		font-size: 130%;
+	}
+	section, aside {
+		float: none;
+		width: 75.83334%;             /* 100 - (2 x 2.08333) */
+	}
+	section {
+		margin-bottom: 0;
+	}
+	section h1 {
+		font-size: 160%;
+	}
+	article {
+    	-moz-column-count: 1;
+    	-webkit-column-count: 1;
+    	column-count: 1;
+	}
+	figure {
+		float: left;
+		width: 40%;
+	}
+	aside {
+		padding: 0 2.08333%;
+		margin-bottom: 2em;
+	}
+	aside h2 {
+		margin-top: 0;
+	}
+	aside ul {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	section h1 {
+		font-size: 140%;
+	}
+	figure {
+		float: none;
+		width: 100%;
+	}
+	aside {
+		width: 75%;
+		padding: 0 12.5%;
+	}
+	aside ul {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+
+	}
+}
